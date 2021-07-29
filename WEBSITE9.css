@@ -1,0 +1,188 @@
+/* GENERAL CODES */
+body {background: rgba(250, 71, 0, 0.808); font-size: 10px;}
+* {box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
+* ::-webkit-scrollbar {width: 10px; background-color: #ededed;}
+* ::-webkit-scrollbar-thumb {background-color: orangered;}
+html {scroll-behavior:smooth; font-size: 0.6rem;}
+img {background-position: center; background-size: cover; }
+/* ----------------------------------------------------------------------------------- */
+/* SLIDE FADING */
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}}
+  /* On smaller screens, decrease text size */
+  /* @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}} */
+/* --------------------------------------------------------------------------------------------- */
+/* ----------------------- */
+/* HIDDEN */
+.extra-menus {display: none;}
+.mobileComments {display: none;}
+.navbar .collapse .navbar-nav .mobileCart {display: none;}
+.loginforMobile {display: none;}
+/* NAVBAR */
+nav a, .form-inline label, .form-inline input{font-size: 2rem;}
+.form-inline .navbar-nav {margin-left: 30%; }
+nav .collapse .navbar-nav .nav-item a {margin-left: 20px;}
+nav .collapse .navbar-nav li a {color: red;}
+/* PAGE1 */
+/* BASKET */
+.basket {position: fixed; bottom:0; right:0; margin-right: 2%; margin-bottom: 1%; z-index: 999;}
+.basket button {width:80px; height: 80px ;background: url("img/sepet.png") center center no-repeat; background-size: cover;background-position: center ;border:none;}
+/* PAGE1 PART1 */
+.page1 p {font-size: 2rem;}
+.menus .row .page1 {font-size: 1.5rem; margin-top: 40px;} 
+.menus .row .page1 .Sliding .price {margin-left: 40%;}
+.menus .row .page1 .Sliding .pricetitle {color: yellow;margin-left: 15%;}
+/* MENU RIGHT */
+.menus .row .mainright {font-size: 1.5rem;border:2px solid red; padding-top: 2%; list-style-type: none; margin-top: 2%;}
+.menus .row .mainright .rightall {margin:7% 0%;}
+.menus .row .mainright .rightall .img1 img {width:30px; height: 30px; margin-right: 5%;}
+.menus a {color: yellow; font-weight: bold;}
+.menus .row .mainright .cart1 {background-color: rgb(255, 187, 0); height: 40%; border: 2px solid red; border-top:none !important; padding:5%;}
+.menus .row .mainright .cart1 .cartinside a {margin-left: 10%;}
+.menus .row .mainright .cart1 .cartinside {font-weight: bold; margin-left: 5%;}
+.menus .row .mainright .cart1 .cartinside .plus {background: url("img/plus.png") center center no-repeat; width: 15px; height: 15px; background-size: cover;background-position: center; }
+.menus .row .mainright .cart1 .cartinside .minus {background: url("img/minus.png") center center no-repeat; margin-left:5px; width: 15px; height: 15px; background-size: cover; background-position: center;}
+.menus .row .mainright .cart1 ul li  {color: blue; list-style-type: none;}
+/* MENU LEFT */
+.menus .row .mainleft {font-size: 1.5rem;border:2px solid red; padding-top: 2%; list-style-type: none; margin-top: 2%;}
+.menus .row .mainleft .leftall .nameSurname {font-weight: bold; color: red; text-decoration: underline;}
+.dot {  height: 13px;
+        width: 13px;
+        margin: 2% 1% 1% 1% ;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;}
+.dot1 {margin-left: 45%;}
+  .active {background-color: #717171;}
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;}
+    .line1 {height: 2px; width: 100%; background-color: orangered; z-index:100; margin:10% 0%;}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* PAGE2 */
+/* Page2 Part1 */
+.page2 {margin-top: 80px;font-size: 1.5rem !important; color: red; border-top: 2px solid orangered;}
+.page2 p button {font-size: 15px; margin-top: -10px; font-weight: bold !important; }
+.page2 p {margin-top: 37px; font-weight: bolder !important; text-decoration: underline; }
+.page2 .row .page2part1  {border: 2px solid orangered;margin-top: 5%; background: url("img/HamburgerFull.jpg") center center no-repeat; background-size: cover; background-position: center;}
+/* ---------------------------------------------------------------------------------- */
+/* Page2 Part2 */
+.page2 .row .page2part2 {margin-top: 6%; position: relative; } 
+.page2 .row .page2part2 {border: 2px solid orangered; margin-top: 5%; background: url("img/baverage.png") center center no-repeat; background-size: cover;}
+/* ---------------------------------------------------------------------------------- */
+/* Contact */
+.contactTelimg,.contactMailimg {height: 30px; width: 30px; margin-left: 20%;}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* PAGE3 */
+.page3 img {background-position: center; width: 50px; height: 50px; margin-top: 15px; margin-left: 35%;}
+.page3title img {background-position: center; width: 50px; height: 50px; margin-top: 15px; margin-left: 10%;}
+.page3title img {margin-top:0 !important;}
+.page3 p{font-size: 20px;font-weight: bold ;text-align: center; margin-top: 20px;}
+.page3title {height: 100px;margin-top: 80px;padding-top: 20px ; border-top: 2px solid orangered;}
+.page3title .row .cmTitle {margin-top: 40px;}
+.page3 {margin-top: 40px;}
+.page3title u {font-size: 20px;font-weight: bold ;text-align: center; margin-left: 40px;}
+.page3 .col-12, .page3 .col-6, .page3 .col-4 
+{background-color: orangered;}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* PAGE4 */
+.page4 {margin-top: 80px; font-size: 2rem; border: 2px solid orangered;}
+.page4 input {margin-bottom: 20px; height: 3.5rem;}
+.page4 button {margin:10px 0px;}
+.page4 img {margin-bottom: 5px;}
+.page4 label {margin-top:20px;}
+.page4 .contactTel,.page4 .contactMail {margin-left: 2%; font-size: 1.5rem; font-weight: bold; color: red;}
+.contactTelimg,.contactMailimg {margin-left:30% !important;} 
+
+
+
+
+
+
+
+
+/* MOBILE */
+@media screen and (max-width:1000px)
+{
+ /* HIDING */
+ .form-inline {display: none;}
+ .page3title {display: none;}
+ .mainleft {display: none;}
+ .mainright {display: none;}
+.basket {display: none;}
+.loginforMobile {display: inline-block;}
+.extra-menus {display: inline-block;}
+.mobileComments {display: inline-block;}
+.navbar .collapse .navbar-nav .mobileCart {display: inline-block;}
+/* NAV */
+nav {font-size: 2rem;}
+/* MOBILE LOGIN POPUP */
+.loginforMobile {font-size: 20px; z-index: 900; float: left;}
+.mobileLoginUsername {margin-top: 30px;}
+.mobileLoginPassword {margin-top: 20px;}
+/* MOBILE PAGE1 */
+.menus p {font-size: 1.5rem;}
+.menus .page1 .Sliding p .pricetitle {font-size: 15px !important;}
+.menus .page1 .Sliding p .price {font-size: 20px !important; margin-left:20% !important;}
+.menus .row .mobileTop marquee .nameSurname {text-decoration: underline;}
+.dot { height: 10px; width: 10px; margin-top: 5%;}
+.dot1 {margin-left: 38%;}
+.extra-menu1 {display: none;}
+.form-inline .navbar-nav {margin-left: 35%; } */
+/* Login */
+.form-inline .navbar-nav .nav-item .dropdown-menu {margin-right: 60%;}
+.form-inline .navbar-nav .nav-item .dropdown-toggle {margin-right: 30%; width: 60px;}
+
+/* MOBILE PAGE2 */
+.page2 p {font-size: 1rem;}
+.page2 p button {font-size: 10px;}
+/* ------------- */
+
+/* MOBILE PAGE3 */
+.page3 p {font-size: 15px;}
+/* MOBILE PAGE4 CONTACT */
+.page4 .row .page4main .form-group .firstLabel {margin-top: 100px;}
+.page4 img {width: 20px; height: 20px; margin-left:19% !important;}
+.page4 .contactTel, .page4 .contactMail {font-size: 12px;}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
