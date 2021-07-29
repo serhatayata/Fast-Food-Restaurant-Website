@@ -1,0 +1,110 @@
+/* GENERAL CODES */
+body {background: rgba(250, 71, 0, 0.808); font-size: 10px;}
+* {box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
+img {width: 100%; height: auto;}
+html {scroll-behavior:smooth;}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*------------------------------------------------------------------------------------------------------------------------ */
+/* BASKET */
+.basket {position: fixed; bottom:0; right:0; margin-right: 2%; margin-bottom: 1%; z-index: 999;}
+.basket button {width:80px; height: 80px ;background: url("img/sepet.png") center center no-repeat; background-size: cover;background-position: center ;border:none;}
+/* HIDDEN */
+.extra-menus {display: none;}
+.mobileComments {display: none;}
+.navbar .collapse .navbar-nav .mobileCart {display: none;}
+.loginforMobile {display: none;}
+/* HEADER NAVBAR */
+header {position: sticky; top:0; z-index: 999;color: red;}
+nav a {color: red;}
+nav img {width: 35px; height: 35px;}
+nav .collapse .navbar-nav li a {font-size: 1.2rem;}
+/* MainPage */
+#sectionA {font-size: 16px; color: yellow; margin-bottom:50px}
+#sectionA .mainright {padding: 20px;}
+#sectionA .mainright .rightall {margin-top: 20px;}
+#sectionA .mainright .rightall a {margin-left: 10%; color: yellow;}
+#sectionA .mainright img {height: 35px; width: 35px;}
+#sectionA .nameSurname {text-decoration: underline;}
+#sectionA .page1 .mainleft,.mainright {border: 5px solid orangered;}  
+#sectionA .page1 .row .main .Sliding img {width: 100%; height: auto;}
+#sectionA .page1 .row .main .Sliding p {margin-top: 1rem;}
+#sectionA .pricetitle {font-size: 1.5rem;}
+#sectionA .price {font-size: 1.5rem; margin-left: 5%;}
+#sectionA .mainright .cart1 {margin-top:3rem; width: 100%; height: 15rem; background-color: orange;}
+#sectionA .mainright .cart1 .cartinside {border: 4px solid orangered; border-top: none; height: 15rem; padding: 20px;}
+#sectionA .mainright button {height: 15px; width: 15px;} #sectionA .plus {background: url(img/plus.png) center center no-repeat; background-size: cover; background-position: center;} #sectionA .minus {background: url(img/minus.png) center center no-repeat; background-size: cover; background-position: center;}
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* PAGE2 */
+#sectionB {margin:10rem 0; font-size: 1rem; border-top: 5px solid orangered;}
+#sectionB .page2_1 {color: black; text-decoration: underline;background: url(img/HamburgerFull.jpg) center center no-repeat; background-position: center; background-size: cover; padding: 2.5rem; border: 3px solid red; margin-top: 6rem;}
+#sectionB .page2_2 { text-decoration: underline;color: white;background: url(img/baverage.png) center center no-repeat; background-position: center; background-size: cover; padding: 2.5rem; border: 3px solid red;margin-top: 6rem;}
+#sectionB .page2_1 p, .page2_2 p { margin-top: 2rem;}
+#sectionB .page2_1 button, .page2_2 button {margin-top: -0.5rem;}
+/* PAGE3 */
+#sectionC .page3 img {background-position: center; width: 50px; height: 50px; margin-top: 15px; margin-left: 35%;}
+#sectionC .page3title img {background-position: center; width: 50px; height: 50px; margin-top: 15px; margin-left: 10%;}
+#sectionC .page3title img {margin-top:0 !important;}
+#sectionC .page3 p{font-size: 20px;font-weight: bold ;text-align: center; margin-top: 20px;}
+#sectionC .page3title {height: 100px; padding: 3rem; margin-bottom:5rem; border-top: 5px solid orangered;}
+#sectionC .page3title .row .cmTitle {margin-top: 40px;}
+#sectionC .page3 {margin-top: 40px;}
+#sectionC .page3title u {font-size: 20px;font-weight: bold ;text-align: center; margin-left: 40px;}
+#sectionC .page3 .col-12, .page3 .col-6, .page3 .col-4 
+{background-color: orangered;}
+/* PAGE4 */
+#sectionD .page4 {margin-top: 80px; font-size: 1.3rem; border-top: 5px solid orangered;}
+#sectionD .page4 input {margin-bottom: 1rem; height: 2.2rem;}
+#sectionD .page4 button {margin:0.6rem 0;}
+#sectionD .page4 img {margin-bottom: 5px;}
+#sectionD .page4 label {margin-top:0.1rem;}
+#sectionD .page4 .contactTel,.page4 .contactMail {margin-left: 2%; font-size: 1rem; font-weight: bold; color: red;}
+#sectionD .contactTelimg,.contactMailimg {margin-left:30% !important;} 
+#sectionD .contactTelimg,.contactMailimg {height: 1.5rem; width: 1.5rem; margin-left: 20%;}
+#sectionD .firstLabel {margin-top: 3rem !important;}
+/* -------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:1000px)
+{
+ /* HIDING */
+ .form-inline {display: none;}
+ .page3title {display: none;}
+ .mainleft {display: none;}
+ .mainright {display: none;}
+.basket {display: none;}
+.loginforMobile {display: inline-block;}
+.mobileTop {display: inline-block;}
+.extra-menus {display: inline-block;}
+.mobileComments {display: inline-block;}
+/* NAV */
+nav {font-size: 2rem;}
+/* SECTION_A */
+#sectionA .mobileTop {margin-bottom: 1rem !important; font-size: 1rem;}
+/* SECTION B */
+#sectionB .page2_1 {font-size: 0.7rem !important;}
+#sectionB .page2_2 {font-size: 0.7rem !important;}
+#sectionB .page2_1 .btn1 {width:2.7rem; height: auto; font-size: 6px; margin-left:0 !important;}
+#sectionB .page2_1 .btn2 {width:1.6rem; height: auto; font-size: 5px;}
+#sectionB .page2 button {width: 2.7rem; font-size: 0.6rem;}
+/* SECTION C */
+/* SECTION D */
+#sectionD .contactTelimg,.contactMailimg {margin-left:20% !important;} 
+/* MOBILE LOGIN POPUP */
+.loginforMobile {font-size: 20px; z-index: 900; float: left; margin-bottom: 1rem;}
+.mobileLoginUsername {margin-top: 30px;}
+.mobileLoginPassword {margin-top: 20px;}
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+
+

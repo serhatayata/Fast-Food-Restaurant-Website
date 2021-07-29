@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<title>Website9</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="FastFoodWebsiteCSS.css">
+<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- ENTRANCE -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true"> 
+        <div class="modal-dialog" role="document">
+          <div class="modal-content bg-warning">
+            <div class="modal-body">
+              <img class="img-fluid" src="img/WELCOME.jpg" style="height: 400px; width: 500px;">
+  
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">CONTINUE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- FIXED BASKET -->
+<div class="basket">
+  <button class="basketbutton"></button>
+  <!-- <img href="#" src="img/sepet.png"> -->
+</div>
+<header>
+  <nav class="navbar sticky-top navbar-success navbar-expand-lg bg-warning nav-fill nav-tabs">
+    <!-- BRAND -->
+    <span class="navbar-brand h1">
+     <img src="img/S.png" width="35px" height="35px"><span class="brandtitle">RESTAURANT</span>
+    </span>
+    <!-- BUTTON -->
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarMenu">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+    <!-- ITEMS -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+     <ul class="navbar-nav nav-danger bg-warning h5">
+       <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+       <li class="nav-item"><a href="#sectionB" class="nav-link">Menus</a></li>
+       <li class="nav-item"><a href="#sectionC" class="nav-link">Campaigns</a></li>
+       <li class="nav-item"><a href="#sectionD" class="nav-link">Contact</a></li>
+       <li class="nav-item mobileCart"><a href="#" class="nav-link">Cart</a></li>
+       <ul class="navbar-nav bg-warning extra-menus">
+       <li class="nav-item">
+           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Extra Menus </a>
+           <div class="dropdown-menu bg-warning">
+           <a href="#" class="dropdown-item bg-warning">Chosen Menus</a>
+           <a href="#" class="dropdown-item bg-warning">Healthy Menus</a>
+           <a href="#" class="dropdown-item bg-warning">Vodafone Menus</a>
+           <a href="#" class="dropdown-item bg-warning">Turkcell Menus</a>
+           </div>
+       </li>
+       </ul>    
+     </ul>
+     <form class="form-inline">
+       <ul class="navbar-nav bg-dark mr-auto">
+           <li class="nav-item dropdown bg-warning">
+                   <a href="#" class="nav-link dropdown-toggle mainpart" data-toggle="dropdown" role="button">Login </a>
+                   <div class="dropdown-menu bg-warning">
+                       <label class="form-control dropdown-item popup1">Username</label>
+                       <input type="text" name="username" id="username1" class="form-control dropdown-item popup1 bg-light">
+                       <label class="form-control dropdown-item popup1">Password</label>
+                       <input type="password" name="password" id="password1" class="form-control dropdown-item bg-light popup1">
+                   <div class="dropdown-divider popup1"></div>
+                   <a href="#" class="dropdown-item popup1">Sing Up!</a>
+                   <div class="dropdown-divider popup1"></div>
+                       <a href="#" class="dropdown-item popup1">Forgot Password</a>
+                   </div>
+               </li>
+           </ul>
+       </form>
+    </div>
+   </nav>
+</header>
+<main>
+  <section id="sectionLogin">
+    <!-- LOGIN FOR MOBILE -->
+<div class="container-fluid loginforMobile">
+  <div class="row">
+    <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">LOGIN</button>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true"> 
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>LOGIN</h5>
+            <button type="button" class="close" data-dismiss="modal"></button>
+            <small aria-hidden="true"></small>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group mobileLoginUsername">
+                <label class="form-control-label">Username </label>
+                <input type="text" name="usernameMobile" id="usernameMobile1">
+              </div>
+              <div class="form-group mobileLoginPassword">
+                <label class="form-control-label">Password&nbsp;</label>
+                <input type="password" name="passwordMobile" id="passwordMobile1">
+              </div>
+              <hr>
+              <div class="form-group">
+                <p><a href="#" class="form-control-link ForgotPass">Forgot Password</a></p>
+                <p><a href="#" class="form-control-link SignUp">Sign Up!</a></p>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">DONE</button>
+            <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">CLOSE</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <section id="sectionA">
+    <div class="container-fluid page1">
+      <div class="row">
+        <!-- MAIN LEFT -->
+        <div class="col-lg-2 d-none d-sm-none d-md-none d-lg-block d-xl-block mainleft">
+          <div class="leftall">
+              <marquee scrollamount="4" height="600px" width="100%" direction="down" class="comments">
+                  <p class="nameSurname">John</p>
+                  <p class="comline">These pizzas you have are awesome!</p>
+                  <div class="line1"></div>
+                  <p class="nameSurname">Oliver</p>
+                  <p class="comline">Hamburger was so gorgeus. I will keep on eating here.</p>
+                  <div class="line1"></div>
+                  <p class="nameSurname">Brian</p>
+                  <p class="comline">I am fond  of these hamburgers..</p>
+                  <div class="line1"></div>
+                  <p class="nameSurname">Daniel</p>
+                  <p class="comline">Really delicious.</p>
+                  <div class="line1"></div>
+                  <p class="nameSurname">Nicole</p>
+                  <p class="comline">So fast and tasty...</p>
+              </marquee>
+          </div>
+        </div>
+        <!-- MAIN -->
+        <div class="col-sm-12 col-lg-8 main">
+          <div class="col-sm-12 col-md-12 d-lg-none d-xl-none mobileTop">
+            <marquee scrollamount="4" height="100px" direction="left" class="comments" style="margin-top: 20px;">
+                <p class="nameSurname">Comments</p>
+                <div class="line1"></div>
+                <p class="comline">These pizzas you have are awesome! /// Hamburger was so gorgeus. I will keep on eating here. ///I am fond of these hamburgers.. /// Really delicious. /// So fast and tasty...</p>
+            </marquee>
+          </div>
+          <div class="Sliding fade">
+            <p><span class="pricetitle">Menu : 1</span><span class="price">7.90$</span></p>
+              <img src="img/hamburgerMenu1.jpg">
+          </div>
+          <div class="Sliding fade">
+            <p><span class="pricetitle">Menu : 2</span><span class="price ">9.90$</span></p>
+              <img src="img/HamburgerTek.jpg">
+          </div>
+          <div class="Sliding fade">
+            <p><span class="pricetitle">Menu : 3</span><span class="price">14.90$</span></p>
+              <img src="img/Pizza1.jpg">
+          </div> 
+          <div class="Sliding fade">
+            <p><span class="pricetitle">Menu : 4</span><span class="price">8.90$</span></p>
+              <img src="img/Pizza2.jpg">
+          </div> 
+          <div>
+            <span class="dot dot1"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+          </div>
+        </div>
+        <!-- MAIN RIGHT -->
+        <div class="col-lg-2 d-none d-sm-none d-md-none d-lg-block d-xl-block mainright">
+          <div class="rightall">
+            <span class="img1"><img src="img/healthy.jpg"></span><span><a href="#">Healthy Menus</a></span>
+          </div>
+          <div class="rightall">
+           <span class="img1"><img src="img/chosenfood.jpg"></span><span><a href="#">Chosen Menus</a></span>
+         </div>
+         <div class="line1"></div>
+         <div class="rightall">
+           <span class="img1"><img src="img/vodafone-icon.png"></span><span><a href="#">Vodafone Menus</a></span>
+         </div>
+         <div class="rightall">
+           <span class="img1"><img src="img/TKC.png"></span><span><a href="#">Turkcell Menus</a></span>
+         </div>
+         <div class="line1"></div>
+         <div class="rightall">
+           <span class="img1"><img src="img/sepet.png"></span><span><a href="#">Cart</a></span>
+         </div>
+         <div class="cart1">
+           <div class="cartinside">
+              <span class="cartPiece1">1</span>&nbsp;<span><a href="#">Menu1</a></span>
+              <span><button class="plus"></button></span><span><button class="minus"></button></span>
+           </div>
+         </div>
+   </div> 
+      </div>
+    </div>
+  </section>
+  <!-- --------------------------------------------------------------- -->
+  <!-- PAGE2 -->
+  <section id="sectionB">
+    <div class="container-fluid page2" id="menus">
+      <div class="row">
+         <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 page2part1">
+           <div class="container-fluid">
+             <div class="row page2_1">
+               <div class="col-1.5 foods">
+                 <p> MENU-1 </p>
+                 <p> MENU-2 </p>
+                 <p> MENU-3 </p>
+                 <p> MENU-4 </p>
+                 <p> MENU-5 </p>
+                 <p> MENU-6 </p>
+                 <p> MENU-7 </p>
+               </div>
+               <div class="col-1 offset-1 foods">
+                 <p> HAMBURGER </p>
+                 <p> HAMBURGER </p>
+                 <p> PIZZA </p>
+                 <p> PIZZA </p>
+                 <p> PIZZA </p>
+                 <p> HAMBURGER </p>
+                 <p> HAMBURGER </p>
+               </div>
+               <div class="col-2 offset-2 foods">
+                   <p><button class="btn btn-danger btn-sm btn1">Gradients</button></p>
+                   <p><button class="btn btn-danger btn-sm btn1">Gradients</button></p>
+                   <p><button class="btn btn-danger btn-sm btn1">Gradients</button></p>
+                   <p><button class="btn btn-danger btn-sm btn1">Gradients</button></p>
+                   <p><button class="btn btn-danger btn-sm btn1">Gradients</button></p>
+                   <p><button class="btn btn-danger btn-sm btn1">Gradients</button></p>
+                   <p><button class="btn btn-danger btn-sm btn1">Gradients</button></p>
+                 </ul>
+               </div>
+               <div class="col-1 offset-1 foods">
+                    <p><button class="btn btn-danger btn-sm btn2">Add</button></p>
+                    <p><button class="btn btn-danger btn-sm btn2">Add</button></p>
+                    <p><button class="btn btn-danger btn-sm btn2">Add</button></p>
+                    <p><button class="btn btn-danger btn-sm btn2">Add</button></p>
+                    <p><button class="btn btn-danger btn-sm btn2">Add</button></p>
+                    <p><button class="btn btn-danger btn-sm btn2">Add</button></p>
+                    <p><button class="btn btn-danger btn-sm btn2">Add</button></p>
+               </div>
+             </div>
+           </div>
+          </div>
+          <!-- BAVERAGES -->
+          <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5  page2part2">
+              <div class="container-fluid">
+                <div class="row page2_2">
+                 <div class="col-4 offset-1 bavs">
+                     <p>COLA</p> 
+                     <p>PEPSI</p>  
+                     <p>FANTA</p>  
+                     <p>SODA</p> 
+                     <p>LEMONADE</p> 
+                     <p>WATER</p>  
+                     <p>WATER</p>                          
+                 </div>
+                 <div class="col-3 bavs">
+                     <p>(320mL)</p>
+                     <p>(200mL)</p>
+                     <p>(320mL)</p>
+                     <p>(320mL)</p>
+                     <p>(320mL)</p>
+                     <p>(500mL)</p>
+                     <p>(1000mL)</p>
+                 </div>
+                 <div class="col-3 offset-1 bavs">
+                     <p><button class="btn btn-danger btn-sm btn1">Add</button></p>
+                     <p><button class="btn btn-danger btn-sm btn1">Add</button></p>
+                     <p><button class="btn btn-danger btn-sm btn1">Add</button></p>
+                     <p><button class="btn btn-danger btn-sm btn1">Add</button></p>
+                     <p><button class="btn btn-danger btn-sm btn1">Add</button></p>
+                     <p><button class="btn btn-danger btn-sm btn1">Add</button></p>
+                     <p><button class="btn btn-danger btn-sm btn1">Add</button></p>
+                 </div>
+                </div>
+              </div>
+          </div>
+      </div>
+     </div>
+
+
+
+  </section>
+<!-- ------------------------------------------------------------------ -->
+<!-- PAGE3 -->
+<!-- CAMPAIGN TITLES -->
+<section id="sectionC">
+  <div class="container-fluid page3title">
+    <div class="row">
+      <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block cmTitle">
+      <span><img src="img/chosenfood.jpg"><u>Special Menus</u></span>
+      </div>
+      <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block cmTitle">
+        <span><img src="img/vodafone-icon.png"><u>Vodafone Menus</u></span>
+      </div>
+      <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block cmTitle">
+        <span><img src="img/TKC.png"><u>Turkcell Menus</u></span>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid page3" id="campaigns">
+    <div class="row">
+      <div class="col-sm-12 col-lg-4 part1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="img/hamburgericon1.jpg" >
+                  </div>
+                  <div class="col-6">
+                    <img src="img/baverageicon.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12">
+                  <p>2 x MENU-1 + 2 x COLA = 18$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+      </div>
+      <div class="col-sm-12 col-lg-4 part1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="img/hamburgericon1.jpg" >
+                  </div>
+                  <div class="col-6">
+                    <img src="img/baverageicon.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12">
+                  <p>2 x MENU-3 + 2 x FANTA = 16$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+      </div>
+      <div class="col-sm-12 col-lg-4 part1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="img/hamburgericon1.jpg" >
+                  </div>
+                  <div class="col-6">
+                    <img src="img/baverageicon.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12">
+                  <p>2 x MENU-7 + 2 x FANTA = 16$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid page3">
+    <div class="row">
+      <div class="col-sm-12 col-lg-4 part2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="img/pizzaicon.png" >
+                  </div>
+                  <div class="col-6">
+                    <img src="img/baverageicon.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12">
+                  <p>2 x MENU-3 + 2 x COLA = 20$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+      </div>
+      <div class="col-sm-12 col-lg-4 part2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="img/pizzaicon.png" >
+                  </div>
+                  <div class="col-6">
+                    <img src="img/pizzaicon.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12">
+                  <p>1 x MENU-3 + 1 x MENU-4 = 15$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+      </div>
+      <div class="col-sm-12 col-lg-4 part2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="img/hamburgericon1.jpg" >
+                  </div>
+                  <div class="col-6">
+                    <img src="img/baverageicon.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12">
+                  <p>2 x MENU-1 + 2 x FANTA = 12$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+      </div>
+      <div class="container-fluid page3">
+        <div class="row">
+          <div class="col-sm-12 col-lg-4 part3">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-6">
+                        <img src="img/hamburgericon1.jpg" >
+                      </div>
+                      <div class="col-6">
+                        <img src="img/hamburgericon1.jpg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12">
+                      <p>1 x MENU-1 + 1 x MENU-2 = 11$</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+          </div>
+          <div class="col-sm-12 col-lg-4 part3">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-6">
+                        <img src="img/hamburgericon1.jpg" >
+                      </div>
+                      <div class="col-6">
+                        <img src="img/baverageicon.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12">
+                      <p>3 x MENU-2 + 3 x FANTA = 26$</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+          </div>
+          <div class="col-sm-12 col-lg-4 part3">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-6">
+                        <img src="img/hamburgericon1.jpg" >
+                      </div>
+                      <div class="col-6">
+                        <img src="img/baverageicon.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12">
+                      <p>2 x MENU-7 + 2 x COLA = 16$</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ------------------------------------------------------------------ -->
+<!-- PAGE4 -->
+<section id="sectionD">
+  <div class="container-fluid page4" id="contact">
+    <div class="row">
+     <div class="col-sm-1 col-md-2 col-lg-3 contactLeft"></div>
+     <div class="col-sm-10 col-md-8 col-lg-6 page4main">
+      <form>
+       <div class="form-group">
+        <label class="form-control-label firstLabel">Name - Surname</label>
+        <input type="text" class="form-control">
+       </div>
+       <div class="form-group">
+           <label class="form-control-label">E-mail</label>
+           <input type="email" class="form-control">
+       </div>
+        <div class="form-group">
+           <label class="form-control-label">Phone Number</label>
+           <input type="tel" class="form-control">
+       </div>
+       <div class="form-group">
+           <label class="form-control-label">Message</label>
+           <textarea id="textarea1" rows="3" class="form-control"></textarea>
+           <button class="btn btn-lg btn-warning form-control">Enter</button>
+       </div>
+      </form>
+      <p><span><img src="img/tel.png" class="contactTelimg"></span><span class="contactTel"><u>Phone-1</u> : (222) 222 22 22</span></p>
+      <p><span><img src="img/Mail-icon.png" class="contactMailimg"></span><span class="contactMail"><u>E-MAIL</u> : email@email.com</span></p>
+     </div>
+     <div class="col-sm-1 col-md-2 col-lg-3 contactRight"></div>
+    </div>
+   </div>
+</section>
+</main>
+<!-- OPENING -->
+<script type="text/javascript">
+  $ (window).on("load",function(){ 
+      $("#myModal2").modal("show")
+  
+   });
+</script>
+<!-- SLIDING -->
+<script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("Sliding");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); 
+    }
+    </script>
+</body>
+</html>
