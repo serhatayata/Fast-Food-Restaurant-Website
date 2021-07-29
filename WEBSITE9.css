@@ -103,14 +103,6 @@ nav .collapse .navbar-nav li a {color: red;}
 .page4 label {margin-top:20px;}
 .page4 .contactTel,.page4 .contactMail {margin-left: 2%; font-size: 1.5rem; font-weight: bold; color: red;}
 .contactTelimg,.contactMailimg {margin-left:30% !important;} 
-
-
-
-
-
-
-
-
 /* MOBILE */
 @media screen and (max-width:1000px)
 {
@@ -156,33 +148,4 @@ nav {font-size: 2rem;}
 .page4 .contactTel, .page4 .contactMail {font-size: 12px;}
 
 /* -------------------------------------------------------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
